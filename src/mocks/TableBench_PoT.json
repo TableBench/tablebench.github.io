@@ -1,0 +1,488 @@
+{
+    "performances": [
+        {
+            "model": "Deepseek-Coder-33B-Instruct",
+            "FactChecking": "33.12",
+            "NumericalReasoning": "32.60",
+            "DataAnalysis": "19.97",
+            "Visualization": "24.00",
+            "Overall": "27.20"
+        },
+        {
+            "model": "StructLM-7B",
+            "FactChecking": "13.54",
+            "NumericalReasoning": "11.48",
+            "DataAnalysis": "4.38",
+            "Visualization": "0.00",
+            "Overall": "8.30"
+        },
+        {
+            "model": "MAP-Neo-7B-Instruct",
+            "FactChecking": "0.00",
+            "NumericalReasoning": "0.00",
+            "DataAnalysis": "0.44",
+            "Visualization": "4.00",
+            "Overall": "0.40"
+        },
+        {
+            "model": "StructLM-13B",
+            "FactChecking": "1.04",
+            "NumericalReasoning": "0.00",
+            "DataAnalysis": "0.28",
+            "Visualization": "0.00",
+            "Overall": "0.21"
+        },
+        {
+            "model": "Deepseek-Coder-7B-Instruct",
+            "FactChecking": "48.98",
+            "NumericalReasoning": "34.66",
+            "DataAnalysis": "18.17",
+            "Visualization": "18.00",
+            "Overall": "28.89"
+        },
+        {
+            "model": "StructLM-34B",
+            "FactChecking": "27.74",
+            "NumericalReasoning": "14.45",
+            "DataAnalysis": "5.38",
+            "Visualization": "2.00",
+            "Overall": "11.61"
+        },
+        {
+            "model": "Yi-Large",
+            "FactChecking": "13.19",
+            "NumericalReasoning": "15.25",
+            "DataAnalysis": "5.97",
+            "Visualization": "6.00",
+            "Overall": "10.90"
+        },
+        {
+            "model": "Qwen2-7B-Instruct",
+            "FactChecking": "0.00",
+            "NumericalReasoning": "0.76",
+            "DataAnalysis": "0.38",
+            "Visualization": "2.00",
+            "Overall": "0.60"
+        },
+        {
+            "model": "Llama3.1-70B-Instruct",
+            "FactChecking": "59.05",
+            "NumericalReasoning": "34.04",
+            "DataAnalysis": "23.15",
+            "Visualization": "34.00",
+            "Overall": "32.52"
+        },
+        {
+            "model": "Qwen1.5-7B-Chat",
+            "FactChecking": "39.23",
+            "NumericalReasoning": "20.40",
+            "DataAnalysis": "7.66",
+            "Visualization": "0.00",
+            "Overall": "16.29"
+        },
+        {
+            "model": "Deepseek-Coder-V2",
+            "FactChecking": "62.91",
+            "NumericalReasoning": "47.08",
+            "DataAnalysis": "31.62",
+            "Visualization": "44.00",
+            "Overall": "42.67"
+        },
+        {
+            "model": "WizardLM-13B",
+            "FactChecking": "8.33",
+            "NumericalReasoning": "14.79",
+            "DataAnalysis": "3.73",
+            "Visualization": "4.00",
+            "Overall": "9.12"
+        },
+        {
+            "model": "Llama2-13B-Chat",
+            "FactChecking": "3.03",
+            "NumericalReasoning": "4.48",
+            "DataAnalysis": "3.19",
+            "Visualization": "0.00",
+            "Overall": "3.61"
+        },
+        {
+            "model": "Gemma-7B-Instruct",
+            "FactChecking": "21.62",
+            "NumericalReasoning": "10.45",
+            "DataAnalysis": "6.74",
+            "Visualization": "2.00",
+            "Overall": "9.81"
+        },
+        {
+            "model": "CodeLlama-7B-Instruct",
+            "FactChecking": "19.44",
+            "NumericalReasoning": "13.31",
+            "DataAnalysis": "1.79",
+            "Visualization": "0.00",
+            "Overall": "8.85"
+        },
+        {
+            "model": "Qwen-Max",
+            "FactChecking": "50.42",
+            "NumericalReasoning": "32.80",
+            "DataAnalysis": "19.41",
+            "Visualization": "30.00",
+            "Overall": "29.39"
+        },
+        {
+            "model": "Qwen1.5-32B-Chat",
+            "FactChecking": "49.01",
+            "NumericalReasoning": "34.01",
+            "DataAnalysis": "17.43",
+            "Visualization": "8.00",
+            "Overall": "27.79"
+        },
+        {
+            "model": "GPT-3.5-Turbo",
+            "FactChecking": "60.92",
+            "NumericalReasoning": "42.09",
+            "DataAnalysis": "30.25",
+            "Visualization": "38.00",
+            "Overall": "39.34"
+        },
+        {
+            "model": "Qwen1.5-110B-Chat",
+            "FactChecking": "53.55",
+            "NumericalReasoning": "36.83",
+            "DataAnalysis": "18.38",
+            "Visualization": "24.00",
+            "Overall": "30.77"
+        },
+        {
+            "model": "Deepseek-Chat-V2",
+            "FactChecking": "57.48",
+            "NumericalReasoning": "45.96",
+            "DataAnalysis": "30.37",
+            "Visualization": "46.00",
+            "Overall": "41.07"
+        },
+        {
+            "model": "Qwen1.5-72B-Chat",
+            "FactChecking": "33.16",
+            "NumericalReasoning": "20.85",
+            "DataAnalysis": "13.03",
+            "Visualization": "14.00",
+            "Overall": "18.65"
+        },
+        {
+            "model": "GPT-4o",
+            "FactChecking": "62.31",
+            "NumericalReasoning": "47.83",
+            "DataAnalysis": "30.03",
+            "Visualization": "54.00",
+            "Overall": "42.92"
+        },
+        {
+            "model": "Qwen1.5-14B-Chat",
+            "FactChecking": "44.38",
+            "NumericalReasoning": "28.20",
+            "DataAnalysis": "10.33",
+            "Visualization": "2.00",
+            "Overall": "21.48"
+        },
+        {
+            "model": "GLM-4",
+            "FactChecking": "31.49",
+            "NumericalReasoning": "25.46",
+            "DataAnalysis": "25.34",
+            "Visualization": "22.00",
+            "Overall": "25.92"
+        },
+        {
+            "model": "CodeLlama-70b-Instruct",
+            "FactChecking": "18.75",
+            "NumericalReasoning": "10.71",
+            "DataAnalysis": "3.26",
+            "Visualization": "2.00",
+            "Overall": "8.25"
+        },
+        {
+            "model": "Mixtral-8x7B-Instruct",
+            "FactChecking": "35.86",
+            "NumericalReasoning": "26.23",
+            "DataAnalysis": "13.96",
+            "Visualization": "6.00",
+            "Overall": "21.32"
+        },
+        {
+            "model": "Llama3.1-8B-Instruct",
+            "FactChecking": "30.38",
+            "NumericalReasoning": "17.24",
+            "DataAnalysis": "8.86",
+            "Visualization": "8.00",
+            "Overall": "14.88"
+        },
+        {
+            "model": "GPT-4-Turbo",
+            "FactChecking": "70.08",
+            "NumericalReasoning": "49.31",
+            "DataAnalysis": "34.63",
+            "Visualization": "48.00",
+            "Overall": "45.69"
+        },
+        {
+            "model": "Qwen2-72B-Instruct",
+            "FactChecking": "56.37",
+            "NumericalReasoning": "41.33",
+            "DataAnalysis": "22.36",
+            "Visualization": "12.00",
+            "Overall": "33.91"
+        },
+        {
+            "model": "Llama3-8B-Chat",
+            "FactChecking": "13.94",
+            "NumericalReasoning": "19.50",
+            "DataAnalysis": "9.31",
+            "Visualization": "10.00",
+            "Overall": "14.43"
+        },
+        {
+            "model": "CodeLlama-34B-Instruct",
+            "FactChecking": "5.90",
+            "NumericalReasoning": "4.20",
+            "DataAnalysis": "0.53",
+            "Visualization": "2.00",
+            "Overall": "2.88"
+        },
+        {
+            "model": "Llama2-7B-Chat",
+            "FactChecking": "3.61",
+            "NumericalReasoning": "3.95",
+            "DataAnalysis": "1.56",
+            "Visualization": "0.00",
+            "Overall": "2.76"
+        },
+        {
+            "model": "Llama3-70B-Chat",
+            "FactChecking": "60.64",
+            "NumericalReasoning": "36.59",
+            "DataAnalysis": "26.11",
+            "Visualization": "10.00",
+            "Overall": "33.59"
+        },
+        {
+            "model": "Mistral-7B-Instruct",
+            "FactChecking": "6.25",
+            "NumericalReasoning": "2.60",
+            "DataAnalysis": "1.19",
+            "Visualization": "0.00",
+            "Overall": "2.35"
+        },
+        {
+            "model": "CodeQwen1.5-7B-Chat",
+            "FactChecking": "0.00",
+            "NumericalReasoning": "0.00",
+            "DataAnalysis": "0.00",
+            "Visualization": "0.00",
+            "Overall": "0.00"
+        },
+        {
+            "model": "TableLLM-Qwen2-7B",
+            "FactChecking": "10.59",
+            "NumericalReasoning": "10.34",
+            "DataAnalysis": "18.76",
+            "Visualization": "26.00",
+            "Overall": "14.54"
+        },
+        {
+            "model": "TableLLM-Llama3.1-8B",
+            "FactChecking": "25.67",
+            "NumericalReasoning": "28.64",
+            "DataAnalysis": "19.77",
+            "Visualization": "44.00",
+            "Overall": "25.76"
+        },
+        {
+            "model": "TableLLM-CodeQwen-7B",
+            "FactChecking": "4.86",
+            "NumericalReasoning": "12.04",
+            "DataAnalysis": "16.08",
+            "Visualization": "36.00",
+            "Overall": "14.21"
+        },
+        {
+            "model": "TableLLM-Deepseek-Coder-7B",
+            "FactChecking": "7.12",
+            "NumericalReasoning": "14.61",
+            "DataAnalysis": "21.04",
+            "Visualization": "30.00",
+            "Overall": "17.19"
+        },
+        {
+            "model": "TableLLM-Llama3-8B",
+            "FactChecking": "15.07",
+            "NumericalReasoning": "12.68",
+            "DataAnalysis": "17.53",
+            "Visualization": "28.00",
+            "Overall": "15.83"
+        }
+    ],
+    "models": [
+        {
+            "model_name": "Deepseek-Coder-33B-Instruct"
+        },
+        {
+            "model_name": "StructLM-7B"
+        },
+        {
+            "model_name": "MAP-Neo-7B-Instruct"
+        },
+        {
+            "model_name": "StructLM-13B"
+        },
+        {
+            "model_name": "Deepseek-Coder-7B-Instruct"
+        },
+        {
+            "model_name": "StructLM-34B"
+        },
+        {
+            "model_name": "Yi-Large"
+        },
+        {
+            "model_name": "Qwen2-7B-Instruct"
+        },
+        {
+            "model_name": "Llama3.1-70B-Instruct"
+        },
+        {
+            "model_name": "Qwen1.5-7B-Chat"
+        },
+        {
+            "model_name": "Deepseek-Coder-V2"
+        },
+        {
+            "model_name": "WizardLM-13B"
+        },
+        {
+            "model_name": "Llama2-13B-Chat"
+        },
+        {
+            "model_name": "Gemma-7B-Instruct"
+        },
+        {
+            "model_name": "CodeLlama-7B-Instruct"
+        },
+        {
+            "model_name": "Qwen-Max"
+        },
+        {
+            "model_name": "Qwen1.5-32B-Chat"
+        },
+        {
+            "model_name": "GPT-3.5-Turbo"
+        },
+        {
+            "model_name": "Qwen1.5-110B-Chat"
+        },
+        {
+            "model_name": "Deepseek-Chat-V2"
+        },
+        {
+            "model_name": "Qwen1.5-72B-Chat"
+        },
+        {
+            "model_name": "GPT-4o"
+        },
+        {
+            "model_name": "Qwen1.5-14B-Chat"
+        },
+        {
+            "model_name": "GLM-4"
+        },
+        {
+            "model_name": "CodeLlama-70b-Instruct"
+        },
+        {
+            "model_name": "Mixtral-8x7B-Instruct"
+        },
+        {
+            "model_name": "Llama3.1-8B-Instruct"
+        },
+        {
+            "model_name": "GPT-4-Turbo"
+        },
+        {
+            "model_name": "Qwen2-72B-Instruct"
+        },
+        {
+            "model_name": "Llama3-8B-Chat"
+        },
+        {
+            "model_name": "CodeLlama-34B-Instruct"
+        },
+        {
+            "model_name": "Llama2-7B-Chat"
+        },
+        {
+            "model_name": "Llama3-70B-Chat"
+        },
+        {
+            "model_name": "Mistral-7B-Instruct"
+        },
+        {
+            "model_name": "CodeQwen1.5-7B-Chat"
+        },
+        {
+            "model_name": "TableLLM-Qwen2-7B"
+        },
+        {
+            "model_name": "TableLLM-Llama3.1-8B"
+        },
+        {
+            "model_name": "TableLLM-CodeQwen-7B"
+        },
+        {
+            "model_name": "TableLLM-Deepseek-Coder-7B"
+        },
+        {
+            "model_name": "TableLLM-Llama3-8B"
+        }
+    ],
+    "date_marks": [
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000
+    ]
+}

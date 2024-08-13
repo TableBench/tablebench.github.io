@@ -1,0 +1,488 @@
+{
+    "performances": [
+        {
+            "model": "Deepseek-Coder-33B-Instruct",
+            "FactChecking": "28.38",
+            "NumericalReasoning": "5.09",
+            "DataAnalysis": "10.13",
+            "Visualization": "8.00",
+            "Overall": "9.74"
+        },
+        {
+            "model": "Deepseek-Coder-7B-Instruct",
+            "FactChecking": "21.60",
+            "NumericalReasoning": "4.75",
+            "DataAnalysis": "22.17",
+            "Visualization": "14.00",
+            "Overall": "13.82"
+        },
+        {
+            "model": "StructLM-13B",
+            "FactChecking": "27.76",
+            "NumericalReasoning": "6.74",
+            "DataAnalysis": "14.30",
+            "Visualization": "0.00",
+            "Overall": "11.52"
+        },
+        {
+            "model": "StructLM-7B",
+            "FactChecking": "34.64",
+            "NumericalReasoning": "5.79",
+            "DataAnalysis": "14.37",
+            "Visualization": "2.00",
+            "Overall": "12.06"
+        },
+        {
+            "model": "StructLM-34B",
+            "FactChecking": "0.00",
+            "NumericalReasoning": "0.50",
+            "DataAnalysis": "0.99",
+            "Visualization": "0.00",
+            "Overall": "0.60"
+        },
+        {
+            "model": "MAP-Neo-7B-Instruct",
+            "FactChecking": "22.43",
+            "NumericalReasoning": "7.17",
+            "DataAnalysis": "18.21",
+            "Visualization": "0.00",
+            "Overall": "12.66"
+        },
+        {
+            "model": "Qwen1.5-72B-Chat",
+            "FactChecking": "75.34",
+            "NumericalReasoning": "21.10",
+            "DataAnalysis": "28.02",
+            "Visualization": "0.00",
+            "Overall": "28.45"
+        },
+        {
+            "model": "GLM-4",
+            "FactChecking": "70.63",
+            "NumericalReasoning": "24.99",
+            "DataAnalysis": "31.19",
+            "Visualization": "6.00",
+            "Overall": "31.23"
+        },
+        {
+            "model": "Llama3-70B-Chat",
+            "FactChecking": "72.24",
+            "NumericalReasoning": "23.09",
+            "DataAnalysis": "31.58",
+            "Visualization": "12.00",
+            "Overall": "30.91"
+        },
+        {
+            "model": "Qwen1.5-110B-Chat",
+            "FactChecking": "72.37",
+            "NumericalReasoning": "22.28",
+            "DataAnalysis": "28.28",
+            "Visualization": "18.00",
+            "Overall": "29.72"
+        },
+        {
+            "model": "Llama3.1-8B-Instruct",
+            "FactChecking": "64.13",
+            "NumericalReasoning": "13.28",
+            "DataAnalysis": "27.15",
+            "Visualization": "2.00",
+            "Overall": "23.47"
+        },
+        {
+            "model": "Deepseek-Chat-V2",
+            "FactChecking": "68.82",
+            "NumericalReasoning": "40.87",
+            "DataAnalysis": "35.71",
+            "Visualization": "20.00",
+            "Overall": "40.65"
+        },
+        {
+            "model": "Llama2-7B-Chat",
+            "FactChecking": "41.14",
+            "NumericalReasoning": "7.43",
+            "DataAnalysis": "23.78",
+            "Visualization": "0.00",
+            "Overall": "16.98"
+        },
+        {
+            "model": "CodeLlama-7B-Instruct",
+            "FactChecking": "42.50",
+            "NumericalReasoning": "6.10",
+            "DataAnalysis": "24.88",
+            "Visualization": "0.00",
+            "Overall": "17.01"
+        },
+        {
+            "model": "Llama2-13B-Chat",
+            "FactChecking": "46.49",
+            "NumericalReasoning": "9.72",
+            "DataAnalysis": "23.25",
+            "Visualization": "2.00",
+            "Overall": "18.58"
+        },
+        {
+            "model": "CodeLlama-34B-Instruct",
+            "FactChecking": "58.97",
+            "NumericalReasoning": "12.24",
+            "DataAnalysis": "24.83",
+            "Visualization": "2.00",
+            "Overall": "21.60"
+        },
+        {
+            "model": "Llama3.1-70B-Instruct",
+            "FactChecking": "72.31",
+            "NumericalReasoning": "27.60",
+            "DataAnalysis": "31.14",
+            "Visualization": "22.00",
+            "Overall": "33.63"
+        },
+        {
+            "model": "Yi-Large",
+            "FactChecking": "70.26",
+            "NumericalReasoning": "25.01",
+            "DataAnalysis": "29.74",
+            "Visualization": "37.50",
+            "Overall": "32.43"
+        },
+        {
+            "model": "Qwen1.5-32B-Chat",
+            "FactChecking": "42.32",
+            "NumericalReasoning": "15.60",
+            "DataAnalysis": "21.46",
+            "Visualization": "4.00",
+            "Overall": "20.21"
+        },
+        {
+            "model": "Qwen1.5-7B-Chat",
+            "FactChecking": "26.47",
+            "NumericalReasoning": "8.04",
+            "DataAnalysis": "24.13",
+            "Visualization": "0.00",
+            "Overall": "15.84"
+        },
+        {
+            "model": "Qwen1.5-14B-Chat",
+            "FactChecking": "34.80",
+            "NumericalReasoning": "11.08",
+            "DataAnalysis": "22.90",
+            "Visualization": "2.00",
+            "Overall": "17.76"
+        },
+        {
+            "model": "Mixtral-8x7B-Instruct",
+            "FactChecking": "66.24",
+            "NumericalReasoning": "15.81",
+            "DataAnalysis": "25.99",
+            "Visualization": "10.00",
+            "Overall": "24.98"
+        },
+        {
+            "model": "GPT-3.5-Turbo",
+            "FactChecking": "56.50",
+            "NumericalReasoning": "20.52",
+            "DataAnalysis": "31.84",
+            "Visualization": "0.00",
+            "Overall": "27.75"
+        },
+        {
+            "model": "Gemma-7B-Instruct",
+            "FactChecking": "29.69",
+            "NumericalReasoning": "6.44",
+            "DataAnalysis": "22.21",
+            "Visualization": "2.00",
+            "Overall": "14.82"
+        },
+        {
+            "model": "CodeLlama-70b-Instruct",
+            "FactChecking": "13.37",
+            "NumericalReasoning": "1.64",
+            "DataAnalysis": "7.69",
+            "Visualization": "10.00",
+            "Overall": "5.73"
+        },
+        {
+            "model": "Qwen2-7B-Instruct",
+            "FactChecking": "53.76",
+            "NumericalReasoning": "15.75",
+            "DataAnalysis": "21.51",
+            "Visualization": "0.00",
+            "Overall": "21.23"
+        },
+        {
+            "model": "Llama3-8B-Chat",
+            "FactChecking": "70.79",
+            "NumericalReasoning": "18.55",
+            "DataAnalysis": "28.93",
+            "Visualization": "0.00",
+            "Overall": "27.28"
+        },
+        {
+            "model": "Qwen2-72B-Instruct",
+            "FactChecking": "71.11",
+            "NumericalReasoning": "27.32",
+            "DataAnalysis": "30.90",
+            "Visualization": "10.00",
+            "Overall": "32.52"
+        },
+        {
+            "model": "Qwen-Max",
+            "FactChecking": "67.01",
+            "NumericalReasoning": "22.28",
+            "DataAnalysis": "28.55",
+            "Visualization": "22.92",
+            "Overall": "29.63"
+        },
+        {
+            "model": "Mistral-7B-Instruct",
+            "FactChecking": "50.15",
+            "NumericalReasoning": "9.32",
+            "DataAnalysis": "24.55",
+            "Visualization": "0.00",
+            "Overall": "19.15"
+        },
+        {
+            "model": "WizardLM-13B",
+            "FactChecking": "52.35",
+            "NumericalReasoning": "11.48",
+            "DataAnalysis": "25.50",
+            "Visualization": "0.00",
+            "Overall": "20.80"
+        },
+        {
+            "model": "GPT-4o",
+            "FactChecking": "74.29",
+            "NumericalReasoning": "42.73",
+            "DataAnalysis": "34.36",
+            "Visualization": "38.00",
+            "Overall": "42.73"
+        },
+        {
+            "model": "GPT-4-Turbo",
+            "FactChecking": "72.97",
+            "NumericalReasoning": "40.17",
+            "DataAnalysis": "32.34",
+            "Visualization": "34.00",
+            "Overall": "40.38"
+        },
+        {
+            "model": "Deepseek-Coder-V2",
+            "FactChecking": "70.25",
+            "NumericalReasoning": "31.48",
+            "DataAnalysis": "31.07",
+            "Visualization": "26.00",
+            "Overall": "35.21"
+        },
+        {
+            "model": "CodeQwen1.5-7B-Chat",
+            "FactChecking": "32.01",
+            "NumericalReasoning": "7.08",
+            "DataAnalysis": "25.86",
+            "Visualization": "0.00",
+            "Overall": "16.76"
+        },
+        {
+            "model": "TableLLM-Deepseek-Coder-7B",
+            "FactChecking": "67.32",
+            "NumericalReasoning": "17.14",
+            "DataAnalysis": "29.86",
+            "Visualization": "26.00",
+            "Overall": "27.98"
+        },
+        {
+            "model": "TableLLM-Qwen2-7B",
+            "FactChecking": "65.25",
+            "NumericalReasoning": "16.70",
+            "DataAnalysis": "28.94",
+            "Visualization": "24.00",
+            "Overall": "27.14"
+        },
+        {
+            "model": "TableLLM-CodeQwen-7B",
+            "FactChecking": "65.02",
+            "NumericalReasoning": "13.48",
+            "DataAnalysis": "29.82",
+            "Visualization": "26.00",
+            "Overall": "26.08"
+        },
+        {
+            "model": "TableLLM-Llama3.1-8B",
+            "FactChecking": "63.68",
+            "NumericalReasoning": "18.01",
+            "DataAnalysis": "28.32",
+            "Visualization": "24.00",
+            "Overall": "27.19"
+        },
+        {
+            "model": "TableLLM-Llama3-8B",
+            "FactChecking": "66.03",
+            "NumericalReasoning": "16.59",
+            "DataAnalysis": "28.02",
+            "Visualization": "28.00",
+            "Overall": "26.93"
+        }
+    ],
+    "models": [
+        {
+            "model_name": "Deepseek-Coder-33B-Instruct"
+        },
+        {
+            "model_name": "Deepseek-Coder-7B-Instruct"
+        },
+        {
+            "model_name": "StructLM-13B"
+        },
+        {
+            "model_name": "StructLM-7B"
+        },
+        {
+            "model_name": "StructLM-34B"
+        },
+        {
+            "model_name": "MAP-Neo-7B-Instruct"
+        },
+        {
+            "model_name": "Qwen1.5-72B-Chat"
+        },
+        {
+            "model_name": "GLM-4"
+        },
+        {
+            "model_name": "Llama3-70B-Chat"
+        },
+        {
+            "model_name": "Qwen1.5-110B-Chat"
+        },
+        {
+            "model_name": "Llama3.1-8B-Instruct"
+        },
+        {
+            "model_name": "Deepseek-Chat-V2"
+        },
+        {
+            "model_name": "Llama2-7B-Chat"
+        },
+        {
+            "model_name": "CodeLlama-7B-Instruct"
+        },
+        {
+            "model_name": "Llama2-13B-Chat"
+        },
+        {
+            "model_name": "CodeLlama-34B-Instruct"
+        },
+        {
+            "model_name": "Llama3.1-70B-Instruct"
+        },
+        {
+            "model_name": "Yi-Large"
+        },
+        {
+            "model_name": "Qwen1.5-32B-Chat"
+        },
+        {
+            "model_name": "Qwen1.5-7B-Chat"
+        },
+        {
+            "model_name": "Qwen1.5-14B-Chat"
+        },
+        {
+            "model_name": "Mixtral-8x7B-Instruct"
+        },
+        {
+            "model_name": "GPT-3.5-Turbo"
+        },
+        {
+            "model_name": "Gemma-7B-Instruct"
+        },
+        {
+            "model_name": "CodeLlama-70b-Instruct"
+        },
+        {
+            "model_name": "Qwen2-7B-Instruct"
+        },
+        {
+            "model_name": "Llama3-8B-Chat"
+        },
+        {
+            "model_name": "Qwen2-72B-Instruct"
+        },
+        {
+            "model_name": "Qwen-Max"
+        },
+        {
+            "model_name": "Mistral-7B-Instruct"
+        },
+        {
+            "model_name": "WizardLM-13B"
+        },
+        {
+            "model_name": "GPT-4o"
+        },
+        {
+            "model_name": "GPT-4-Turbo"
+        },
+        {
+            "model_name": "Deepseek-Coder-V2"
+        },
+        {
+            "model_name": "CodeQwen1.5-7B-Chat"
+        },
+        {
+            "model_name": "TableLLM-Deepseek-Coder-7B"
+        },
+        {
+            "model_name": "TableLLM-Qwen2-7B"
+        },
+        {
+            "model_name": "TableLLM-CodeQwen-7B"
+        },
+        {
+            "model_name": "TableLLM-Llama3.1-8B"
+        },
+        {
+            "model_name": "TableLLM-Llama3-8B"
+        }
+    ],
+    "date_marks": [
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000,
+        1721880000000
+    ]
+}
