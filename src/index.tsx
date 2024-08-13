@@ -120,7 +120,7 @@ ReactDOM.render(
 
                   <span className="link-block" style={{ padding: '10px' }}>
                     <a
-                      href="https://mceval.github.io"
+                      href="https://tablebench.github.io/"
                       className="external-link button is-normal is-rounded is-dark"
                     >
                       <span className="icon">
