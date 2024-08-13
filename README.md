@@ -1,5 +1,5 @@
 # MCEVAL
-This is the repository that contains source code for the [MCEVAL website](https://tablebench.github.io/).
+This is the repository that contains source code for the [TableBench website](https://tablebench.github.io/).
 
 The code refers to [Livecode Bench website](https://livecodebench.github.io).
 
