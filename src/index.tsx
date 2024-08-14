@@ -107,7 +107,6 @@ ReactDOM.render(
                       <span>TableBench</span>
                     </a>
                   </span>
-
                   <span className="link-block" style={{ padding: '10px' }}>
                     <a href="https://huggingface.co/datasets/Multilingual-Multimodal-NLP/TableInstruct"
                       className="external-link button is-normal is-rounded is-dark">
@@ -117,7 +116,15 @@ ReactDOM.render(
                       <span>TableInstruct</span>
                     </a>
                   </span>
-
+                  <span className="link-block" style={{ padding: '10px' }}>
+                    <a href="https://huggingface.co/collections/Multilingual-Multimodal-NLP/tablebench-6698d0b29a21ed71c819f30e"
+                      className="external-link button is-normal is-rounded is-dark">
+                      <span className="icon">
+                        <i className="far fa-images"></i>
+                      </span>
+                      <span>TableLLMs</span>
+                    </a>
+                  </span>
                   <span className="link-block" style={{ padding: '10px' }}>
                     <a
                       href="https://tablebench.github.io/"

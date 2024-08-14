@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="description" content="TableBench: A Comprehensive and Complex Benchmark for Table Question Answering" />
-  <meta name="keywords" content="Table Question Answering, Table QA, Large Language Models, LLM, Table QA Evaluation, Benchmark" />
+  <meta name="keywords"
+    content="Table Question Answering, Table QA, Large Language Models, LLM, Table QA Evaluation, Benchmark" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>
     TableBench Homepage
@@ -90,7 +91,7 @@
                     <span>Code</span>
                   </a>
                 </span>
-                <!-- Dataset Link. -->
+                <!-- TableBench Link. -->
                 <span class="link-block">
                   <a href="https://huggingface.co/datasets/Multilingual-Multimodal-NLP/TableBench"
                     class="external-link button is-normal is-rounded is-dark">
@@ -100,26 +101,34 @@
                     <span>TableBench</span>
                   </a>
                 </span>
-
-                <!-- Dataset Link. -->
+                <!-- TableInstruct Link. -->
                 <span class="link-block">
                   <a href="https://huggingface.co/datasets/Multilingual-Multimodal-NLP/TableBench-Instruct"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="far fa-images"></i>
                     </span>
-                    <span>TableBench-Instruct</span>
+                    <span>TableInstruct</span>
                   </a>
-                </span>
-                <!-- Leaderboard Link. -->
-                <span class="link-block">
-                  <a href="leaderboard.html" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fa fa-trophy"></i>
-                    </span>
-                    <span>Leaderboard</span>
-                  </a>
-                </span>
+                  <!-- TableLLM Link. -->
+                  <span class="link-block">
+                    <a href="https://huggingface.co/collections/Multilingual-Multimodal-NLP/tablebench-6698d0b29a21ed71c819f30e"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="far fa-images"></i>
+                      </span>
+                      <span>TableLLMs</span>
+                    </a>
+                  </span>
+                  <!-- Leaderboard Link. -->
+                  <span class="link-block">
+                    <a href="leaderboard.html" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fa fa-trophy"></i>
+                      </span>
+                      <span>Leaderboard</span>
+                    </a>
+                  </span>
               </div>
             </div>
           </div>
@@ -133,7 +142,7 @@
       <div class="hero-body">
         <div class="columns is-centered">
           <!-- center the image -->
-          <img src="./images/mceval_intro.png" alt="Teaser" class="teaser-image center" width="60%" />
+          <img src="./images/intro_case.png" alt="Teaser" class="teaser-image center" width="60%" />
         </div>
       </div>
     </div>
@@ -148,7 +157,11 @@
           <h2 class="title is-3">Introduction</h2>
           <div class="content has-text-justified">
             <p>
-              TableBench is a comprehensive and complex benchmark, covering \textbf{18} fields within four major categories of table question-answering capabilities.
+              Recent advancements in Large Language Models (LLMs) have markedly enhanced the processing and interpretation of tabular data, introducing previously unimaginable capabilities. 
+              Despite these achievements, LLMs still encounter significant challenges when applied in industrial scenarios, particularly due to the increased complexity of reasoning required with real-world tabular data, underscoring a notable disparity between academic benchmarks and practical applications. 
+              To address this discrepancy, we conduct a detailed investigation into the application of tabular data in industrial scenarios and propose a Comprehensive and Complex Table Benchmark (TableBench), including 18 fields within 4 major categories of table question-answering capabilities.
+              Additionally, we introduce TableLLM, trained on TableInstruct, specifically designed to enhance reasoning efficiency in table question-answering tasks. 
+              Massive experiments conducted on TableBench indicate that both open-source and proprietary LLMs still have significant room for improvement to meet real-world demands, where the most advanced model, GPT-4, achieves only a modest score compared to human performance.
             </p>
           </div>
         </div>
@@ -161,18 +174,19 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Dataset Statistics</h2>
+          <h2 class="title is-3">Dataset Construction</h2>
           <div class="content has-text-justified">
             <div class="columns is-centered">
-              <img src="./images/1_statistics.png" alt="HumanEval Overfitting" class="teaser-image center" width="80%"
-                height="80%" />
+              <img src="./images/annotation_process.png" alt="Dataset Construction" class="teaser-image center"
+                width="80%" height="80%" />
             </div>
             <p>
-              We plot the length of input length, the length of output, and the number of
-              test cases of each programming language. The multilingual code generation and explanation tasks
-              separately contain 2K samples, where each language has nearly 50 samples. The code completion
-              task can be decomposed into multi-line completion (3K samples), single-line completion (3K samples),
-              span completion (4K samples), and span completion (light) (2K samples).
+              We introduce TableBench for evaluation, consisting of 886 instances in total, which includes tables,
+              questions, and their corresponding answers, covering 18 typical scenarios for table-based question
+              answering.
+              Additionally, we construct TableInstruct aimed at instruct-tuning, incorporating tables, questions,
+              answers, and detailed reasoning information.
+              The entire dataset construction process is shown in Figure.
             </p>
           </div>
         </div>
@@ -182,38 +196,58 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3"> Human Annotation & Quality Control</h2>
+          <h2 class="title is-3">Dataset Statistic</h2>
           <div class="content has-text-justified">
             <div class="columns is-centered">
-              <img src="./images/2_bench_cases.png" alt="HumanEval Overfitting" class="teaser-image center" width="80%"
-                height="80%" />
-            </div>
-            <p>
-              To create the massively multilingual code evaluation benchmark McEval, the annotation of multilingual
-              code samples is conducted utilizing a comprehensive and systematic human annotation procedure,
-              underpinned by rigorously defined guidelines to ensure accuracy and consistency.
-              Following a detailed training session on the annotation protocol, which emphasizes the importance of
-              context,
-              syntactical correctness, and semantic fidelity across languages, annotators are tasked with creating
-              problem definitions and
-              the corresponding solution.
-            </p>
-          </div>
-        </div>
-      </div>
-  </section>
-  <section class="section">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">mCoder</h2>
-          <div class="content has-text-justified">
-            <div class="columns is-centered">
-              <img src="./images/3_framework.png" alt="HumanEval Overfitting" class="teaser-image center" width="80%"
-                height="80%" />
-            </div>
-            <p>
+              <div class="image-container">
+                <img src="./images/overview_of_tablebench.png" alt="Overview of TableBench" class="teaser-image left" />
+                <div class="right-images">
+                  <img src="./images/reasoning_steps_analysis.png" alt="Reasoning Steps Analysis"
+                    class="teaser-image" />
+                  <img src="./images/categories.png" alt="Dataset Topics" class="teaser-image" />
 
+                </div>
+              </div>
+            </div>
+            <h4>
+              Overview
+            </h4>
+            <p>
+              Drawing from real-world scenarios and user demands for tabular data, we devise four primary question
+              categories: fact-checking, numerical reasoning, data analysis, and visualization, thoroughly illustrating
+              the various challenges encountered in table question-answering scenarios.
+              Relative to existing datasets, TableBench encompasses a broader spectrum of question categories, with a
+              particular emphasis on data analysis and chart plotting capabilities that are notably scarce in prior
+              datasets.
+            </p>
+            <h4>
+              Complexity Analysis
+            </h4>
+            <p>
+              We define the complexity of the dataset by calculating the number of reasoning steps required to solve the
+              problem. Figure above demonstrates that the overall complexity of TableBench is
+              significantly higher than that of existing datasets. 
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Overall Performance</h2>
+          <div class="content has-text-justified">
+            <div class="columns is-centered">
+              <img src="./images/overall_results.png" alt="Dataset Statistic" class="teaser-image center" width="100%"
+                height="80%" />
+            </div>
+            <p>
+              We evaluate 30+ models with sizes ranging from 7B to 110B parameters, including general/code LLMs, open-source/proprietary models, and SFT~\citep{ouyang2022training} models.
+              We explore three distinct reasoning methodologies to augment the reasoning capabilities for tabular data: Textual Chain of Thought (TCoT), Symbolic Chain of Thought (SCoT), and Program of Thought (PoT).
+              TCoT utilizes a textual reasoning approach, employing a series of inferential steps to deduce the final answer.
+              SCoT adopts symbolic reasoning steps, leveraging programming language commands to iteratively simulate and refine results through a 'Think then Code' process. 
+              Conversely, PoT involves generating executable code, employing lines of code as reasoning steps within a programming environment to achieve results.
             </p>
           </div>
         </div>
@@ -226,189 +260,31 @@
           <h2 class="title is-3">Further Analysis</h2>
           <div class="content has-text-justified">
             <div class="columns is-centered">
-              <img src="./images/4_code_class.png" alt="HumanEval Overfitting" class="teaser-image center" width="80%"
+              <img src="./images/effect_of_parsing_ratio.png" alt="Dataset Statistic" class="teaser-image center" width="50%"
+                height="80%" />
+              <img src="./images/data_efficient.png" alt="Dataset Statistic" class="teaser-image center" width="50%"
                 height="80%" />
             </div>
+            <h4>
+              Effect of Parsing Ratio
+            </h4>
             <p>
-              We categorize the programming languages of McEval into 5 programming paradigms and 11 application
-              scenarios and summarize the performance of code LLMs on the code generation task.
+              The performance curve associated with the PoT strategy indicates a marked improvement in overall scores as parsing ratios increase, highlighting the significant potential of the PoT method to boost overall scores through enhanced code pass rates. Comparing the DP, SCoT, and TCoT strategies, data points on the left side of the quadratic curve represent anomalies where performance exceeds expectations at low parsing ratios, where some models (e.g. StructLLM) have weak instruction-following capability compared to the strong capabilities of the table understanding. The right parts of the curves, such as TCoT, show more significant potential at higher resolutions.
             </p>
-          </div>
-        </div>
-      </div>
-  </section>
-  <section class="section">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Model Performance in Code Completion Tasks</h2>
-          <div class="content has-text-justified">
-            <div class="columns is-centered">
-              <img src="./images/5_radar_class_result.png" alt="HumanEval Overfitting" class="teaser-image center"
-                width="80%" height="80%" />
-            </div>
+            <h4>
+              Data Efficiency of TableInstruct
+            </h4>
             <p>
-              It can be observed that code LLMs generally perform better in object-oriented and multi-paradigm
-              programming languages (high-resource languages), while perform worse in functional and procedural
-              programming languages (low-resource languages).
-              In areas like web development and scientific computing, the gap between open-source and closed-source
-              models is narrowing. However, for application scenarios, there is still a substantial gap
-              between open-source models and the closed-source GPT-4 series in low-resource languages related to
-              scripting, mobile development, and educational research. mCoder performs superior over multiple same-size
-              models and even some larger open-source models.
-            </p>
-          </div>
-        </div>
-      </div>
-  </section>
-  <section class="section">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Unbalance in Different Languages</h2>
-          <div class="content has-text-justified">
-            <div class="columns is-centered">
-              <img src="./images/6_cross_dataset.png" alt="HumanEval Overfitting" class="teaser-image center"
-                width="80%" height="80%" />
-            </div>
-            <p>
-              We compare the results of several open-source models on the Multipl-E multilingual benchmark with
-              corresponding languages on McEval.
-              We obtained scores for 11 programming languages (including Python, Java, JavaScript, C++, PHP, Rust,
-              Swift, R, Lua, Racket, and Julia) from the BigCode
-              leaderboard. As shown in Figure (1), due to the simplicity of Python language tasks in this dataset, many
-              models exhibit significant score discrepancies between the
-              two benchmarks. By examining Figure (2) and (3), it becomes evident that all models demonstrate
-              consistent multilingual capabilities between Multipl-E and McEval. However, Figure (2) highlights
-              a majority of models within the blue circle, indicating that the current state-of-the-art performance
-              of most models primarily lies in high-resource languages like Python, while their proficiency in
-              low-resource languages awaits further exploration and enhancement.
-            </p>
-          </div>
-        </div>
-      </div>
-  </section>
-  <section class="section">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Cross-lingual Transfer</h2>
-          <div class="content has-text-justified">
-            <div class="columns is-centered">
-              <img src="./images/7_cross-lingual-transfer.png" alt="HumanEval Overfitting" class="teaser-image center"
-                width="80%" height="80%" />
-            </div>
-            <p>
-              We fine-tune the CodeQwen-1.5 model using Python-only data in McEval-Instruct
-              and compare it with mCoder. CodeQwen-1.5 performs well in most high-resource languages, but CodeQwen
-              without alignment exhibits unsatisfactory results in
-              some low-resource languages due to the inability to follow instructions. As such, with fine-tuning using
-              only Python data,
-              CodeQwen-1.5-Python improves significantly across most languages. It shows that the CodeQwen foundation
-              model already possesses strong coding capabilities
-              but lacks adequate instruction-following skills. Therefore, fine-tuning with Python-only data can still
-              effectively transfer instruction-following abilities to other languages,
-              resulting in superior multilingual performance.
-            </p>
+              In this section, we explore the effects of random subsampling on the TableInstruct mixture for TableLLM, with sampling rates ranging from 0.2 to 0.6, to enhance data efficiency further. Figure above intuitively displays the relative performance of different sampling variants. Initially, the full data mixture provides the highest knowledge coverage, enabling the model to achieve optimal overall performance. Surprisingly, with only 60\% of the samples, the model still retains over 90\% of the full dataset's performance. We observe that the Llama-3-8B model requires fewer than 4000 samples to surpass the performance of Qwen1.5-70B on the dataset, significantly enhancing the performance of smaller-scale models. When fine-tuning across the entire training dataset for each task, Llama-3.1-8B demonstrates comparable performance to GPT-3.5, with the inference cost being only a fraction of that of GPT-3.5, indicating potential for further improvement in data efficiency.
+            </p>  
+
+
           </div>
         </div>
       </div>
   </section>
 
-  <section class="section">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Examples of Multilingual Generation</h2>
-          <div class="content has-text-justified">
-            <div class="columns is-centered">
-              <img src="./images/9_bench_completion_cases.png" alt="HumanEval Overfitting" class="teaser-image center"
-                width="80%" height="80%" />
-            </div>
-            <p>
-              The data mainly consists of an instruction part
-              (including function name, function description, and function call cases),a reference solution, and
-              a test cases part. Left Figure: an example of the Lisp language. Middle Figure: a file processing
-              programming task in AWK language. During the evaluation, the corresponding file processing result
-              by the generated code will be compared with the reference answer. Right Figure: an example of the R
-              language.
-            </p>
-          </div>
-        </div>
-      </div>
-  </section>
-  <section class="section">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Examples of Multilingual Explanation</h2>
-          <div class="content has-text-justified">
-            <div class="columns is-centered">
-              <img src="./images/10_bench_explain_cases.png" alt="HumanEval Overfitting" class="teaser-image center"
-                width="80%" height="80%" />
-            </div>
-            <p>
-              The data mainly consists of an instruction part (including a complete function),
-              a reference Explanation. Left Figure: an example of the Kotlin language. Middle Figure: an example of
-              the Lua language. Right Figure: an example of the HTML language.
-            </p>
-          </div>
-        </div>
-      </div>
-  </section>
-  <section class="section">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Examples of Multilingual Completion</h2>
-          <div class="content has-text-justified">
-            <div class="columns is-centered">
-              <img src="./images/11_bench_fim_cases.png" alt="HumanEval Overfitting" class="teaser-image center"
-                width="80%" height="80%" />
-            </div>
-            <p>
-              The data mainly consists of an instruction part
-              (including an incomplete function ), a reference complete code solution and test cases. Left Figure: an
-              span completion example of the C++ language. Middle Figure: a single-line completion example of
-              the Rust language. Right Figure: a multiple-line completion example of the Shell language.
-            </p>
-          </div>
-        </div>
-      </div>
-  </section>
 
-  <section class="section">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Analysis of Language Representations</h2>
-          <div class="content has-text-justified">
-            <div class="columns is-centered">
-              <img src="./images/12_cluster_merge.png" alt="HumanEval Overfitting" class="teaser-image center"
-                width="80%" height="80%" />
-            </div>
-            <p>
-              As shown in the Figure, we analyzed the programming languages in the McEval from their presentation
-              perspective.
-              We used CodeBERT to extract code representations from code snippets in McEval.
-              The figure clearly shows that languages with similar syntax have closely related representations.
-              For example, other functional programming languages similar to CommonLisp, as well as C, C++, Java, and
-              scripting
-              languages, exhibit high grammar similarity.
-            </p>
-          </div>
-        </div>
-      </div>
-  </section>
-
-  <!--
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code></code></pre>
-    </div>
-  </section>
--->
   <footer class="footer">
     <div class="container">
 
@@ -416,17 +292,9 @@
         <div class="column is-8">
           <div class="content">
             <p>
-              Please reach out to <a href="challenging@buaa.edu.cn">challenging@buaa.edu.cn</a> for questions or
-              feedback on McEval. We are also open to collaborations and suggestions for new scenarios to add to
-              the benchmark. Finally, McEval provides one axis of LLM coding evaluations and we recommend the
-              following leaderboards for measuring code LM ability on various coding tasks, such as
-              <a href="https://livecodebench.github.io/leaderboard.html">LiveCodeBench Leaderboard</a>,
-              <a href="https://evalplus.github.io/leaderboard.html">EvalPlus Leaderboard</a>,
-              <a href="https://crux-eval.github.io/leaderboard.html">CruxEval Leaderboard</a>,
-              <a href="https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard">Chatbot Arena Leaderboard</a>,
-              <a href="https://huggingface.co/spaces/bigcode/bigcode-models-leaderboard">BigCode Models Leaderboard</a>,
-              <a href="https://infi-coder.github.io/inficoder-eval/">InfiCoder-Eval</a>, and
-              <a href="https://leaderboard.tabbyml.com/">TabbyML Leaderboard</a>.
+              Please reach out to <a href="wuxianjie@buaa.edu.cn">wuxianjie@buaa.edu.cn</a> for questions or
+              feedback on TableBench. We are also open to collaborations and suggestions for new scenarios to add to
+              the benchmark.
             </p>
             <p>
               The source code from this website is borrowed from <a
