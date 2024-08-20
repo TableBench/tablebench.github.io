@@ -63,6 +63,8 @@
                 <a href="">Tongliang Li</a><sup>4</sup>,</span>
               <span class="author-block">
                 <a href="">Zhoujun Li</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="">Guanglin Niu</a><sup>1</sup>,</span>
             </div>
             <div class="is-size-5 publication-authors">
               <span class="author-block"><sup>1</sup>CCSE, Beihang University</span>
@@ -75,7 +77,8 @@
               <div class="publication-links">
                 <!-- PDF Link. -->
                 <span class="link-block">
-                  <a href="https://www.arxiv.org/abs/2408.09174" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://www.arxiv.org/abs/2408.09174"
+                    class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                     </span>
@@ -157,11 +160,18 @@
           <h2 class="title is-3">Introduction</h2>
           <div class="content has-text-justified">
             <p>
-              Recent advancements in Large Language Models (LLMs) have markedly enhanced the processing and interpretation of tabular data, introducing previously unimaginable capabilities. 
-              Despite these achievements, LLMs still encounter significant challenges when applied in industrial scenarios, particularly due to the increased complexity of reasoning required with real-world tabular data, underscoring a notable disparity between academic benchmarks and practical applications. 
-              To address this discrepancy, we conduct a detailed investigation into the application of tabular data in industrial scenarios and propose a Comprehensive and Complex Table Benchmark (TableBench), including 18 fields within 4 major categories of table question-answering capabilities.
-              Additionally, we introduce TableLLM, trained on TableInstruct, specifically designed to enhance reasoning efficiency in table question-answering tasks. 
-              Massive experiments conducted on TableBench indicate that both open-source and proprietary LLMs still have significant room for improvement to meet real-world demands, where the most advanced model, GPT-4, achieves only a modest score compared to human performance.
+              Recent advancements in Large Language Models (LLMs) have markedly enhanced the interpretation and
+              processing of tabular data, introducing previously unimaginable capabilities. Despite these achievements,
+              LLMs still encounter significant challenges when applied in industrial scenarios, particularly due to the
+              increased complexity of reasoning required with real-world tabular data, underscoring a notable disparity
+              between academic benchmarks and practical applications. To address this discrepancy, we conduct a detailed
+              investigation into the application of tabular data in industrial scenarios and propose a comprehensive and
+              complex benchmark TableBench, including 18 fields within four major categories of table question answering
+              (TableQA) capabilities. Furthermore, we introduce TableLLM, trained on our meticulously constructed
+              training set TableInstruct, achieving comparable performance with GPT-3.5. Massive experiments conducted
+              on TableBench indicate that both open-source and proprietary LLMs still have significant room for
+              improvement to meet real-world demands, where the most advanced model, GPT-4, achieves only a modest score
+              compared to humans.
             </p>
           </div>
         </div>
@@ -178,15 +188,18 @@
           <div class="content has-text-justified">
             <div class="columns is-centered">
               <img src="./images/annotation_process.png" alt="Dataset Construction" class="teaser-image center"
-                width="100%" height="100%" />
+                width="98%" height="100%" />
             </div>
             <p>
-              We introduce TableBench for evaluation, consisting of 886 instances in total, which includes tables,
-              questions, and their corresponding answers, covering 18 typical scenarios for table-based question
-              answering.
-              Additionally, we construct TableInstruct aimed at instruct-tuning, incorporating tables, questions,
-              answers, and detailed reasoning information.
-              The entire dataset construction process is shown in Figure.
+              To bridge the gap between academic benchmarks and industrial scenarios, we comprehensively analyze tabular
+              data applications in real-world contexts, categorizing these problems into four major categories and 18
+              specific subcategories. We define the complexity of these tasks based on the reasoning steps required for
+              problem-solving and provide detailed guidelines for defining and decomposing these steps, which are
+              rigorously followed during the annotation process. Additionally, we introduce an annotation framework that
+              combines manual and automated methods to enhance annotation efficiency, as illustrated in Figure. Finally,
+              we propose two high-quality corpora: TableBench, a comprehensive and complex benchmark consisting of 886
+              samples, and TableInstruct (20K samples in total), massive instruction corpora designed to instruct LLMs
+              with various reasoning methods.
             </p>
           </div>
         </div>
@@ -210,23 +223,23 @@
               </div>
             </div>
             <h4>
-              Overview
+              Question Categories
             </h4>
             <p>
               Drawing from real-world scenarios and user demands for tabular data, we devise four primary question
-              categories: fact-checking, numerical reasoning, data analysis, and visualization, thoroughly illustrating
-              the various challenges encountered in table question-answering scenarios.
-              Relative to existing datasets, TableBench encompasses a broader spectrum of question categories, with a
-              particular emphasis on data analysis and chart plotting capabilities that are notably scarce in prior
-              datasets.
+              categories: fact-checking, numerical reasoning, data analysis, and visualization, encompassing 18
+              subcategories, thoroughly illustrating the various challenges encountered in TableQA scenarios.
+              Compared with existing datasets, TableBench encompasses a broader spectrum of question categories as
+              presented in Table, with a particular emphasis on data analysis and chart generation capabilities that are
+              notably scarce in prior datasets.
             </p>
             <h4>
-              Complexity Analysis
+              Reasoning Steps
             </h4>
             <p>
               We define the complexity of the dataset by calculating the number of reasoning steps required to solve the
-              problem. Figure above demonstrates that the overall complexity of TableBench is
-              significantly higher than that of existing datasets. 
+              problem. Figure demonstrates that the overall complexity of TableBench is significantly higher than that
+              of existing datasets, particularly in questions about data analysis and visualization. .
             </p>
           </div>
         </div>
@@ -242,12 +255,21 @@
               <img src="./images/overall_results.png" alt="Dataset Statistic" class="teaser-image center" width="100%"
                 height="80%" />
             </div>
+            <div class="columns is-centered">
+              <img src="./images/reasoning_methods_analysis.png" alt="Dataset Statistic" class="teaser-image center"
+                width="100%" height="80%" />
+            </div>
             <p>
-              We evaluate 30+ models with sizes ranging from 7B to 110B parameters, including general/code LLMs, open-source/proprietary models, and SFT~\citep{ouyang2022training} models.
-              We explore three distinct reasoning methodologies to augment the reasoning capabilities for tabular data: Textual Chain of Thought (TCoT), Symbolic Chain of Thought (SCoT), and Program of Thought (PoT).
-              TCoT utilizes a textual reasoning approach, employing a series of inferential steps to deduce the final answer.
-              SCoT adopts symbolic reasoning steps, leveraging programming language commands to iteratively simulate and refine results through a 'Think then Code' process. 
-              Conversely, PoT involves generating executable code, employing lines of code as reasoning steps within a programming environment to achieve results.
+              We evaluate 30+ models with sizes ranging from 7B to 110B parameters, including general/code LLMs,
+              open-source/proprietary models, and SFT models.
+              We explore three distinct reasoning methodologies to augment the reasoning capabilities for tabular data:
+              Textual Chain of Thought (TCoT), Symbolic Chain of Thought (SCoT), and Program of Thought (PoT).
+              TCoT utilizes a textual reasoning approach, employing a series of inferential steps to deduce the final
+              answer.
+              SCoT adopts symbolic reasoning steps, leveraging programming language commands to iteratively simulate and
+              refine results through a 'Think then Code' process.
+              Conversely, PoT involves generating executable code, employing lines of code as reasoning steps within a
+              programming environment to achieve results.
             </p>
           </div>
         </div>
@@ -260,8 +282,8 @@
           <h2 class="title is-3">Further Analysis</h2>
           <div class="content has-text-justified">
             <div class="columns is-centered">
-              <img src="./images/effect_of_parsing_ratio.png" alt="Dataset Statistic" class="teaser-image center" width="50%"
-                height="80%" />
+              <img src="./images/effect_of_parsing_ratio.png" alt="Dataset Statistic" class="teaser-image center"
+                width="50%" height="80%" />
               <img src="./images/data_efficient.png" alt="Dataset Statistic" class="teaser-image center" width="50%"
                 height="80%" />
             </div>
@@ -269,14 +291,17 @@
               Effect of Parsing Ratio
             </h4>
             <p>
-              The performance curve associated with the PoT strategy indicates a marked improvement in overall scores as parsing ratios increase, highlighting the significant potential of the PoT method to boost overall scores through enhanced code pass rates. Comparing the DP, SCoT, and TCoT strategies, data points on the left side of the quadratic curve represent anomalies where performance exceeds expectations at low parsing ratios, where some models (e.g. StructLLM) have weak instruction-following capability compared to the strong capabilities of the table understanding. The right parts of the curves, such as TCoT, show more significant potential at higher resolutions.
+              In comparison to the DP, SCoT, and TCoT methods in Figure above, the data points on the left side of the quadratic curve show that at low parsing ratios, the overall score increases as the parsing ratio decreases, suggesting that certain models (e.g., StructLLM), possess strong table understanding capabilities but exhibit weaker instruction-following abilities. This may be attributed to differences in the instruction format during instruction tuning compared to the format we employ. 
+              The right side of the quadratic curve reveals that despite the strong instruction-following performance of the DP method, the non-reasoning DP method faces a clear performance ceiling. In contrast, reasoning-based methods show significant potential for improvement.
+              The curve of the PoT highlights the substantial potential of the PoT to enhance the overall score by increasing the parsing rate.
             </p>
             <h4>
               Data Efficiency of TableInstruct
             </h4>
             <p>
-              In this section, we explore the effects of random subsampling on the TableInstruct mixture for TableLLM, with sampling rates ranging from 0.2 to 0.6, to enhance data efficiency further. Figure above intuitively displays the relative performance of different sampling variants. Initially, the full data mixture provides the highest knowledge coverage, enabling the model to achieve optimal overall performance. Surprisingly, with only 60\% of the samples, the model still retains over 90\% of the full dataset's performance. We observe that the Llama-3-8B model requires fewer than 4000 samples to surpass the performance of Qwen1.5-70B on the dataset, significantly enhancing the performance of smaller-scale models. When fine-tuning across the entire training dataset for each task, Llama-3.1-8B demonstrates comparable performance to GPT-3.5, with the inference cost being only a fraction of that of GPT-3.5, indicating potential for further improvement in data efficiency.
-            </p>  
+              We construct datasets of varying sizes by sampling from TableInstruct with sampling rates ranging from 0.2 to 0.6. Figure above visually depicts the relative performance at different sampling rates. Surprisingly, with only 60% of the samples, the model retains over 90% of the performance of the complete dataset. 
+              The full data provides the highest knowledge coverage, enabling the model to achieve optimal overall performance, comparable to GPT-3.5, with inference costs being only a fraction, indicating the high efficiency of TableInstruct.
+            </p>
 
 
           </div>

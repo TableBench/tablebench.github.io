@@ -80,7 +80,7 @@ ReactDOM.render(
                 <div className="publication-links">
 
                   <span className="link-block" style={{ padding: '10px' }}>
-                    <a href="https://arxiv.org/abs/2406.07436"
+                    <a href="https://www.arxiv.org/abs/2408.09174"
                       className="external-link button is-normal is-rounded is-dark">
                       <span className="icon">
                         <i className="fas fa-file-pdf"></i>
